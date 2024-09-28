@@ -14,22 +14,23 @@
             <div class="text-logo">
                 <div class="logo"></div>
                 <div class="site-link">
-                    <a href = "http://kubsu.ru">КубГУ</a>
+                    <a href = "https://olegarhchik.github.io/web/tasks/3/index.html">Сайт поддержки</a>
                 </div>
             </div>
             <nav class="main-menu">
                 <ul>
-                    <li><a href="https://kubsu.ru/ru/fktipm">ФКТиПМ</a></li>
-                    <li><a href="https://kubsu.ru/ru/studlife">Студентам</a></li>
-                    <li><a href="https://kubsu.ru/ru/abiturient">Абитуриентам</a></li>
-                    <li><a href="https://kubsu.ru/ru/fktipm/prikladnaya-informatika-prikladnaya-informatika-v-ekonomike">ПИ</a></li>
+                    <li><a href="https://www.youtube.com/@BulkinDrive">Наш блог</a></li>
+                    <li><a href="https://t.me/bulkin_live">Наш тг канал</a></li>
+                    <li><a href="https://krasnodar.drom.ru/auto/">Покупка авто</a></li>
+                    <li><a href="https://zeadek.github.io/web/sites/1/index.html">Shrek's site</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="content">
-            <ul>
+        <div class="content" >
+            <button class="content" id ="toggleButton">See more information</button>
+            <ul id="hiddenBlock">
                 <li>Задание 1 и 7</li>
                 <a href="http://kubsu.ru/" id= "Джунгарик" title="Официальный сайт Кубанского государственного университета">Абсолютная гиперссылка на главную страницу сайта kubsu.ru и ссылка с тремя параметрами в URL</a>
                 <li>Задание 2</li>
@@ -128,14 +129,14 @@
                 </table><br>
             </div>
             <form action="test@example.com">
-                <label>ФИО: <input type="text"><br></label>
-                <label>Телефон: <input type="tel"><br></label>
-                <label>E-mail: <input type="email"><br></label>
-                <label>Дата рождения: <input type="date"><br></label>
+                <label>ФИО: <input type="text" required = "required"><br></label>
+                <label>Телефон: <input type="tel" required = "required"><br></label>
+                <label>E-mail: <input type="email" required = "required"><br></label>
+                <label>Дата рождения: <input type="date" required = "required"><br></label>
 
                 <label>Пол:</label>
-                <label><input type="radio" name="gender">М</label>
-                <label><input type="radio" name="gender">Ж<br></label>
+                <label><input type="radio" name="gender" required = "required">М</label>
+                <label><input type="radio" name="gender" required = "required">Ж<br></label>
                 <label>
                     Любимый язык программирования:
                     <select name="prog-lang" id="prog-lang">
@@ -157,7 +158,7 @@
                     <textarea name="bio" id="bio"></textarea><br>
                 </label>
 
-                <label><input type="checkbox">С контрактом ознакомлен(-а)</label><br>
+                <label><input type="checkbox" required = "required">С контрактом ознакомлен(-а)</label><br>
                 <input type="submit" value="Сохранить">
             </form>
         </div>
@@ -167,5 +168,16 @@
             <p>&copy; Ушаков А.Е. гр. 27/1</p>
         </div>
     </footer>
-</body>
+    <script>
+        const toggleButton = document.getElementById("toggleButton");
+        const hiddenBlock = document.getElementById("hiddenBlock");
+
+        toggleButton.addEventListener("click", () => {
+        if (hiddenBlock.style.display === "block") {
+            hiddenBlock.style.display = "none";
+        } else {
+            hiddenBlock.style.display = "block";
+        }
+        });
+    </script>
 </html>
