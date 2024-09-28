@@ -1,0 +1,164 @@
+
+body {
+    margin: 0;
+    font-family: URW Chancery L, cursive;
+    background-color: #f1e6e6;
+    text-decoration: none;
+}
+
+a{
+    color:#130d35;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  ШАПКА */
+.header {
+    background-color: #0d0d31;
+    color: #e7e3e3;
+    padding: 20px 40px;
+    
+}
+
+.header-content {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ЛОГОТИП */
+.logo {
+    display: flex;
+    width:100px; height: 100px;
+    border-radius: 60%;
+    background: url(logo.jpg);
+    background-size: auto 100px;
+}
+
+.logo img {
+    height: 30px;
+    margin-left: 10px;
+    float: none;
+    margin: 0;
+    position: absolute;
+}
+
+.text-logo{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* ГИТ */
+.site-title {
+    margin: 0;
+}
+
+.site-link a{
+    font-size: 20px;
+    color: rgb(80, 112, 197);
+    text-decoration: none;
+}
+
+.site-link a:hover{
+    color: rgb(168, 40, 40);
+}
+
+/* ССЫЛКА */
+.main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.main-menu li {
+    margin-left: 20px;
+}
+
+.map div {
+    overflow-x: scroll;
+}
+
+.main-menu a {
+    font-size: 20px;
+    color:rgb(105, 218, 193);
+    text-decoration: none;
+}
+
+.main-menu a:hover{
+    color: rgb(172, 21, 21);
+}
+
+/* ТАБЛИЧКА */
+.data-table {
+    border-collapse: collapse;
+    border: solid 3px #0c0808;
+}
+
+.tablet{
+    overflow-x: scroll;
+}
+
+.data-table th, .data-table td {
+    padding: 10px;
+    text-align: left;
+    border: solid 1px #384357;
+}
+
+.data-table th {
+    background-color: #2a647a;
+    color: #fff;
+    grid-column: auto;
+    border: solid 1px #DAD7D7;
+    text-align:left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #36a1b4;
+}
+
+/* подвал */
+.footer {
+    background-color: #276a85;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.tablets, .laptops, .monitors{
+    display: none;
+}
+
+@media (max-width:769px){
+    .main-menu ul{
+        flex-direction: column;
+    }
+    .header-content {
+        flex-direction: column;
+    }
+    .text-logo{
+        margin-bottom: 10px;
+    }
+    .tablet {
+        order: -1;
+    }
+    .site-link{
+        flex-wrap: wrap;
+    }
+}
