@@ -1,13 +1,13 @@
 
 body {
     margin: 0;
-    font-family: URW Chancery L, cursive;
-    background-color: #f1e6e6;
+    font-family: Courier, monospace;
+    background-color: #ffffff;
     text-decoration: none;
 }
 
 a{
-    color:#130d35;
+    color:#000000;
 }
 
 .content {
@@ -35,7 +35,7 @@ button {
 }
   
 button:hover {
-    background-color: #1111e7;
+    background-color: #3131a7;
 }
   
 button:focus {
@@ -50,8 +50,8 @@ button:focus {
 
 /*  ШАПКА */
 .header {
-    background-color: #050511;
-    color: #e7e3e3;
+    background-color: #000000;
+    color: #ffffff;
     padding: 20px 40px;
     
 }
@@ -94,12 +94,12 @@ button:focus {
 
 .site-link a{
     font-size: 20px;
-    color: rgb(94, 27, 41);
+    color: rgb(224, 171, 183);
     text-decoration: none;
 }
 
 .site-link a:hover{
-    color: rgb(168, 40, 40);
+    color: rgb(160, 98, 98);
 }
 
 /* ССЫЛКА */
@@ -122,12 +122,12 @@ button:focus {
 
 .main-menu a {
     font-size: 20px;
-    color:rgb(112, 3, 184);
+    color:rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .main-menu a:hover{
-    color: rgb(167, 94, 228);
+    color: rgb(189, 160, 219);
 }
 
 /* ТАБЛИЧКА */
@@ -150,17 +150,17 @@ button:focus {
     background-color: #000000;
     color: #fff;
     grid-column: auto;
-    border: solid 1px #DAD7D7;
+    border: solid 1px #ffffff;
     text-align:left;
 }
 
 .data-table tr:nth-child(even) {
-    background-color: #353e92;
+    background-color: #8a94ec;
 }
 
 /* подвал */
 .footer {
-    background-color: #0c040e;
+    background-color: #000000;
     color: #fff;
     padding: 20px 0;
     text-align: center;
