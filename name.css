@@ -128,6 +128,26 @@ a{
     background-color: #36a1b4;
 }
 
+
+ p.one:hover + img{ 
+    display: block;
+ }
+ p.two:hover + img{ 
+    display: block;
+ }
+ p.three:hover + img{ 
+    display: block;
+ }
+ p.four:hover + img{ 
+    display: block;
+ }
+ p.five:hover + img{ 
+    display: block;
+ }
+ p.six:hover + img{ 
+    display: block;
+ }
+ 
 /* подвал */
 .footer {
     background-color: #276a85;
